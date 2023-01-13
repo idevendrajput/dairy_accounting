@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "604839546047",
+    "project_id": "dairy-accounting",
+    "storage_bucket": "dairy-accounting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604839546047:android:c34c85961b793dda3e4a0a",
+        "android_client_info": {
+          "package_name": "com.dr.dairyaccounting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604839546047-3h8urv6ld55tna38rnp8os5k3f0ii4hs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwNxVZqA1CI6BOKQuV-6XfzRdPDPqfgSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604839546047-3h8urv6ld55tna38rnp8os5k3f0ii4hs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

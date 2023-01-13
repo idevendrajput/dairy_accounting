@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="100"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="20"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/futura_medium"
+        android:text="---"
+        android:id="@+id/srNo"
+        style="@style/NormalTextStyle"
+        android:textColor="@color/black"   />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="40"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/futura_medium"
+        android:text="---"
+        android:id="@+id/date"
+        style="@style/NormalTextStyle"
+        android:textColor="@color/black"  />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="40"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/futura_medium"
+        android:text="---"
+        android:id="@+id/amount"
+        android:textColor="@color/black"
+        style="@style/NormalTextStyle" />
+
+</LinearLayout>

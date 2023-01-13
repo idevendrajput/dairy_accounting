@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:background="@drawable/bg_rounded_5dp"
+        android:contentDescription="@null"
+        android:id="@+id/close"
+        android:src="@drawable/ic_baseline_close_24"
+        android:padding="7dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Duration"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:fontFamily="@font/futura_medium"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/optionsContainer"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/bg_rounded_5dp"
+            android:id="@+id/today"
+            android:textColor="@color/black"
+            android:backgroundTint="#C6E8F8"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Month"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:id="@+id/currentMonth"
+            android:textColor="@color/black"
+            android:backgroundTint="#C6E8F8"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Month"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:id="@+id/lastMonth"
+            android:textColor="@color/black"
+            android:backgroundTint="#C6E8F8"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:id="@+id/customDateLayout"
+            android:backgroundTint="#C6E8F8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Custom"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:fontFamily="@font/futura_medium"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/txtCustom"
+                />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="From"
+                app:layout_constraintEnd_toStartOf="@+id/txtTo"
+                app:layout_constraintStart_toStartOf="@+id/txtCustom"
+                app:layout_constraintTop_toBottomOf="@+id/txtCustom"
+                android:textSize="12sp"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/open_sans"
+                android:id="@+id/txtStartingFrom"
+                />
+
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/ic_baseline_calendar_month_24"
+                app:layout_constraintTop_toBottomOf="@+id/txtStartingFrom"
+                app:layout_constraintStart_toStartOf="@+id/txtStartingFrom"
+                android:layout_marginTop="7dp"
+                android:contentDescription="@null"
+                android:id="@+id/imgStartFrom"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/imgStartFrom"
+                app:layout_constraintTop_toTopOf="@+id/imgStartFrom"
+                app:layout_constraintBottom_toBottomOf="@+id/imgStartFrom"
+                android:text="12 Apr 2022"
+                android:textSize="12sp"
+                android:layout_marginStart="10dp"
+                android:id="@+id/startingDate"
+                android:textColor="@color/black"
+                android:fontFamily="@font/open_sans"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="To"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtStartingFrom"
+                app:layout_constraintTop_toBottomOf="@+id/txtCustom"
+                android:textSize="12sp"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/open_sans"
+                android:id="@+id/txtTo"
+                />
+
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/ic_baseline_calendar_month_24"
+                app:layout_constraintTop_toBottomOf="@+id/txtStartingFrom"
+                app:layout_constraintStart_toStartOf="@+id/txtTo"
+                android:layout_marginTop="7dp"
+                android:contentDescription="@null"
+                android:id="@+id/imgTo"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/imgTo"
+                app:layout_constraintTop_toTopOf="@+id/imgStartFrom"
+                app:layout_constraintBottom_toBottomOf="@+id/imgStartFrom"
+                android:text="12 Apr 2022"
+                android:textSize="12sp"
+                android:layout_marginStart="10dp"
+                android:id="@+id/endDate"
+                android:textColor="@color/black"
+                android:fontFamily="@font/open_sans"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Report"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@color/teal_700"
+        app:cornerRadius="10dp"
+        android:id="@+id/generateReport"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>

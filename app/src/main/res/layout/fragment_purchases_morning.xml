@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".records.PurchasesMorning">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="3dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tb"
+        app:title="Morning Purchase"
+        app:menu="@menu/menu_search"
+        app:navigationIcon="@drawable/ic_round_arrow_back_ios_24"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/pb"
+        android:elevation="2dp"
+        android:indeterminateTint="@color/black"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/parentHsv"
+        android:scrollbarThumbHorizontal="@null"
+        app:layout_constraintTop_toBottomOf="@+id/tb"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:id="@+id/l1"
+                android:background="@color/grey_1"
+                android:layout_alignParentTop="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sr. No."
+                    android:fontFamily="@font/futura_medium"
+                    style="@style/NormalTextStyle"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:fontFamily="@font/futura_medium"
+                    style="@style/NormalTextStyle"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Qty"
+                    android:fontFamily="@font/futura_medium"
+                    style="@style/NormalTextStyle"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rate"
+                    android:fontFamily="@font/futura_medium"
+                    style="@style/NormalTextStyle"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Amount"
+                    android:fontFamily="@font/futura_medium"
+                    style="@style/NormalTextStyle"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Paid"
+                    android:fontFamily="@font/futura_medium"
+                    style="@style/NormalTextStyle"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_below="@+id/l1"
+                android:layout_above="@+id/bl"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="vertical"
+                android:id="@+id/rv"
+                tools:listitem="@layout/row_item_morning_records"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:id="@+id/bl"
+                android:layout_alignParentBottom="true"
+                android:background="@color/teal_700"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:fontFamily="@font/open_sans"
+                    style="@style/NormalTextStyle"
+                    android:textColor="@color/white"
+                    android:id="@+id/name"
+                    />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="---"
+                    android:fontFamily="@font/open_sans"
+                    style="@style/NormalTextStyle"
+                    android:textColor="@color/white"
+                    android:id="@+id/quantity"
+                    />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="---"
+                    android:fontFamily="@font/open_sans"
+                    style="@style/NormalTextStyle"
+                    android:textColor="@color/white"
+                    android:id="@+id/rate"
+                    />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="---"
+                    android:fontFamily="@font/open_sans"
+                    style="@style/NormalTextStyle"
+                    android:textColor="@color/white"
+                    android:id="@+id/amount"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="---"
+                    android:fontFamily="@font/open_sans"
+                    style="@style/NormalTextStyle"
+                    android:textColor="@color/white"
+                    android:id="@+id/amountPaid"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Result"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="18sp"
+        android:id="@+id/noResult"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

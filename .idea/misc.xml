@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/deven/AndroidStudioProjects/DairyAccounting/app/src/main/res/layout/dialog_account_info.xml" value="0.25" />
+        <entry key="..\:/Users/deven/AndroidStudioProjects/DairyAccounting/app/src/main/res/layout/dialog_all_clients.xml" value="0.25" />
+        <entry key="..\:/Users/deven/AndroidStudioProjects/DairyAccounting/app/src/main/res/layout/fragment_add_payment.xml" value="0.24615384615384617" />
+        <entry key="..\:/Users/deven/AndroidStudioProjects/DairyAccounting/app/src/main/res/layout/fragment_clients_container.xml" value="0.25" />
+        <entry key="..\:/Users/deven/AndroidStudioProjects/DairyAccounting/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/deven/AndroidStudioProjects/DairyAccounting/app/src/main/res/layout/fragment_purchase_evening.xml" value="0.196875" />
+        <entry key="..\:/Users/deven/AndroidStudioProjects/DairyAccounting/app/src/main/res/layout/fragment_summary_by_person.xml" value="0.24615384615384617" />
+        <entry key="..\:/Users/deven/AndroidStudioProjects/DairyAccounting/app/src/main/res/layout/fragment_summary_child_monthly.xml" value="0.175" />
+        <entry key="..\:/Users/deven/AndroidStudioProjects/DairyAccounting/app/src/main/res/layout/fragment_summary_monthly.xml" value="0.2" />
+        <entry key="..\:/Users/deven/AndroidStudioProjects/DairyAccounting/app/src/main/res/layout/fragment_summary_yearly.xml" value="0.175" />
+        <entry key="..\:/Users/deven/AndroidStudioProjects/DairyAccounting/app/src/main/res/layout/fragment_summay_child.xml" value="0.175" />
+        <entry key="..\:/Users/deven/AndroidStudioProjects/DairyAccounting/app/src/main/res/layout/row_item_clients.xml" value="0.25" />
+        <entry key="..\:/Users/deven/AndroidStudioProjects/DairyAccounting/app/src/main/res/layout/row_item_clients_dialog.xml" value="0.175" />
+        <entry key="..\:/Users/deven/AndroidStudioProjects/DairyAccounting/app/src/main/res/layout/row_item_monthly_summary.xml" value="0.175" />
+        <entry key="..\:/Users/deven/AndroidStudioProjects/DairyAccounting/app/src/main/res/layout/row_item_summary.xml" value="0.175" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

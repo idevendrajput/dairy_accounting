@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".add_data.AddClient">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        app:elevation="3dp"
+        app:title="Add Client"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tb"
+        app:menu="@menu/menu_single_check"
+        app:navigationIcon="@drawable/ic_round_arrow_back_ios_24"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:buttonTint="@color/black"
+                android:checked="true"
+                style="@style/NormalTextStyle"
+                android:fontFamily="@font/futura_medium"
+                android:text=" Active"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/inactive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:buttonTint="@color/black"
+                style="@style/NormalTextStyle"
+                android:fontFamily="@font/futura_medium"
+                android:text=" Inactive"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/active"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtClientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/open_sans"
+                android:text="Client Name"
+                android:textColor="@color/black"
+                style="@style/NormalTextStyle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/active" />
+
+            <EditText
+                android:id="@+id/clientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:autofillHints="@null"
+                android:background="@drawable/bg_rounded_5dp"
+                android:fontFamily="@font/open_sans"
+                android:hint="Client Name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textCursorDrawable="@drawable/cursur_black"
+                style="@style/NormalTextStyle"
+                app:layout_constraintTop_toBottomOf="@+id/txtClientName" />
+
+            <TextView
+                android:id="@+id/txtPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/open_sans"
+                android:text="Phone"
+                android:textColor="@color/black"
+                style="@style/NormalTextStyle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clientName" />
+
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:autofillHints="@null"
+                android:background="@drawable/bg_rounded_5dp"
+                android:fontFamily="@font/open_sans"
+                android:hint="Phone Number (Optional)"
+                android:textCursorDrawable="@drawable/cursur_black"
+                android:inputType="number"
+                android:padding="10dp"
+                style="@style/NormalTextStyle"
+                app:layout_constraintTop_toBottomOf="@+id/txtPhone" />
+
+            <TextView
+                android:id="@+id/txtAccountType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/futura_medium"
+                android:text="Account Type"
+                android:textColor="@color/black"
+                style="@style/NormalTextStyle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phoneNumber" />
+
+            <CheckBox
+                android:id="@+id/accountTypePurchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:buttonTint="@color/black"
+                android:checked="true"
+                style="@style/NormalTextStyle"
+                android:fontFamily="@font/futura_medium"
+                android:text=" Purchase"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtAccountType" />
+
+            <CheckBox
+                android:id="@+id/accountTypeSale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:buttonTint="@color/black"
+                style="@style/NormalTextStyle"
+                android:fontFamily="@font/futura_medium"
+                android:text=" Sale"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/active"
+                app:layout_constraintTop_toBottomOf="@+id/txtAccountType" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/accountTypePurchase"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/morning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:buttonTint="@color/black"
+                    android:checked="true"
+                    android:fontFamily="@font/futura_medium"
+                    android:text=" Morning"
+                    style="@style/NormalTextStyle"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <EditText
+                    android:id="@+id/quantityMorning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:autofillHints="@null"
+                    android:background="@drawable/bg_rounded_5dp"
+                    android:fontFamily="@font/open_sans"
+                    android:hint="Quantity"
+                    android:textCursorDrawable="@drawable/cursur_black"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    style="@style/NormalTextStyle"
+                    app:layout_constraintTop_toBottomOf="@+id/morning" />
+
+                <CheckBox
+                    android:id="@+id/evening"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:buttonTint="@color/black"
+                    android:checked="true"
+                    android:fontFamily="@font/futura_medium"
+                    android:text=" Evening"
+                    style="@style/NormalTextStyle"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/quantityMorning" />
+
+                <EditText
+                    android:id="@+id/quantityEvening"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:autofillHints="@null"
+                    android:background="@drawable/bg_rounded_5dp"
+                    android:fontFamily="@font/open_sans"
+                    android:hint="Quantity"
+                    android:inputType="numberDecimal"
+                    android:textCursorDrawable="@drawable/cursur_black"
+                    android:padding="10dp"
+                    style="@style/NormalTextStyle"
+                    app:layout_constraintTop_toBottomOf="@+id/evening" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/futura_medium"
+                    android:text=" Rate"
+                    android:textColor="@color/black"
+                    style="@style/NormalTextStyle"
+                    android:textStyle="bold"  />
+
+                <EditText
+                    android:id="@+id/rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:autofillHints="@null"
+                    android:background="@drawable/bg_rounded_5dp"
+                    android:fontFamily="@font/open_sans"
+                    android:hint="Rate"
+                    android:inputType="numberDecimal"
+                    android:textCursorDrawable="@drawable/cursur_black"
+                    android:padding="10dp"
+                    style="@style/NormalTextStyle"  />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:id="@+id/save"
+                    android:layout_margin="10dp"
+                    app:backgroundTint="@color/teal_700"
+                    android:textColor="@color/white"
+                    app:cornerRadius="10dp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:padding="25dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        android:contentDescription="@null"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/futura_medium"
+        android:layout_marginTop="10dp"
+        android:id="@+id/phone"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Name"
+        android:textSize="12sp"
+        android:layout_gravity="start"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/bg_rounded_5dp"
+        android:layout_marginTop="7dp"
+        android:contentDescription="@null"
+        style="@style/NormalTextStyle"
+        android:id="@+id/displayName"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Phone"
+        android:textSize="12sp"
+        android:layout_gravity="start"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/bg_rounded_5dp"
+        android:layout_marginTop="7dp"
+        android:contentDescription="@null"
+        style="@style/NormalTextStyle"
+        android:id="@+id/displayPhone"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:cornerRadius="10dp"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginTop="15dp"
+        android:id="@+id/save"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 Changes unsaved"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:textColor="@android:color/darker_gray"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:id="@+id/unsavedChanges"
+        android:fontFamily="@font/open_sans"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete All Offline Data"
+        android:layout_gravity="start"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/red"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:id="@+id/deleteData"
+        android:fontFamily="@font/open_sans"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log out"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/red"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:id="@+id/logOut"
+        android:fontFamily="@font/open_sans"
+        />
+
+</LinearLayout>

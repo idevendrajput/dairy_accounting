@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Change Year">
+
+        <menu>
+
+            <item
+                android:title="2020"
+                android:id="@+id/y2020"
+                />
+
+             <item
+                android:title="2021"
+                android:id="@+id/y2021"
+                />
+
+             <item
+                android:title="2022"
+                android:id="@+id/y2022"
+                />
+
+             <item
+                android:title="2023"
+                android:id="@+id/y2023"
+                />
+
+             <item
+                android:title="2024"
+                android:id="@+id/y2024"
+                />
+
+             <item
+                android:title="2025"
+                android:id="@+id/y2025"
+                />
+
+             <item
+                android:title="2026"
+                android:id="@+id/y2026"
+                />
+
+             <item
+                android:title="2027"
+                android:id="@+id/y2027"
+                />
+
+            <item
+                android:title="2028"
+                android:id="@+id/y2028"
+                />
+
+             <item
+                android:title="2029"
+                android:id="@+id/y2029"
+                />
+
+            <item
+                android:title="2030"
+                android:id="@+id/y2030"
+                />
+
+        </menu>
+
+    </item>
+
+    <item
+        android:title="Change Month">
+
+        <menu>
+
+            <item
+                android:title="January"
+                android:id="@+id/january"
+                />
+
+            <item
+                android:title="February"
+                android:id="@+id/february"
+                />
+
+            <item
+                android:title="March"
+                android:id="@+id/march"
+                />
+
+            <item
+                android:title="April"
+                android:id="@+id/april"
+                />
+
+            <item
+                android:title="May"
+                android:id="@+id/may"
+                />
+
+            <item
+                android:title="June"
+                android:id="@+id/june"
+                />
+
+
+            <item
+                android:title="July"
+                android:id="@+id/july"
+                />
+
+            <item
+                android:title="August"
+                android:id="@+id/august"
+                />
+
+            <item
+                android:title="September"
+                android:id="@+id/september"
+                />
+
+            <item
+                android:title="October"
+                android:id="@+id/october"
+                />
+
+            <item
+                android:title="November"
+                android:id="@+id/november"
+                />
+
+            <item
+                android:title="December"
+                android:id="@+id/december"
+                />
+
+
+        </menu>
+
+    </item>
+
+    <item
+        android:title="Excel"
+        android:id="@+id/excel"
+        />
+
+    <item
+        android:title="PDF"
+        android:id="@+id/pdf"
+        />
+
+    <item
+        android:title="Print"
+        android:id="@+id/print"
+        />
+
+    <item
+        android:title="Share Bill"
+        android:id="@+id/share"
+        />
+
+</menu>

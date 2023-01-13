@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.dr.dairyaccounting.ui.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/addClient"
+        android:name="com.dr.dairyaccounting.add_data.AddClient"
+        android:label="fragment_add_client"
+        tools:layout="@layout/fragment_add_client" />
+
+    <fragment
+        android:id="@+id/clientsContainer"
+        android:name="com.dr.dairyaccounting.ui.ClientsContainer"
+        android:label="fragment_clients_container"
+        tools:layout="@layout/fragment_clients_container" />
+
+    <fragment
+        android:id="@+id/purchaseEvening"
+        android:name="com.dr.dairyaccounting.records.AllRecords"
+        android:label="fragment_purchase_evening"
+        tools:layout="@layout/fragment_purchase_evening" />
+    <fragment
+        android:id="@+id/purchasesMorning"
+        android:name="com.dr.dairyaccounting.records.PurchasesMorning"
+        android:label="fragment_purchases_morning"
+        tools:layout="@layout/fragment_purchases_morning" />
+    <fragment
+        android:id="@+id/saleMorning"
+        android:name="com.dr.dairyaccounting.records.SaleMorning"
+        android:label="fragment_sale_morning"
+        tools:layout="@layout/fragment_sale_morning" />
+    <fragment
+        android:id="@+id/saleEvening"
+        android:name="com.dr.dairyaccounting.records.SaleEvening"
+        android:label="fragment_sale_evening"
+        tools:layout="@layout/fragment_sale_evening" />
+    <fragment
+        android:id="@+id/addRecordMorning"
+        android:name="com.dr.dairyaccounting.add_data.AddRecordMorning"
+        android:label="fragment_add_record"
+        tools:layout="@layout/fragment_add_record" >
+        <action
+            android:id="@+id/action_addRecordMorning_to_summaryByPerson"
+            app:destination="@id/summaryByPerson" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRecordEvening"
+        android:name="com.dr.dairyaccounting.add_data.AddRecords"
+        android:label="fragment_add_record_evening"
+        tools:layout="@layout/fragment_add_record_evening" />
+
+    <fragment
+        android:id="@+id/summaryYearly"
+        android:name="com.dr.dairyaccounting.records.summary.SummaryYearly"
+        android:label="fragment_summary_yearly"
+        tools:layout="@layout/fragment_summary_yearly" />
+    <fragment
+        android:id="@+id/summary"
+        android:name="com.dr.dairyaccounting.records.summary.Summary"
+        android:label="fragment_summary"
+        tools:layout="@layout/fragment_summary" />
+    <fragment
+        android:id="@+id/summaryCustom"
+        android:name="com.dr.dairyaccounting.records.summary.SummaryCustom"
+        android:label="fragment_summary_custom"
+        tools:layout="@layout/fragment_summary_custom" />
+<!--    <fragment-->
+<!--        android:id="@+id/addPayment"-->
+<!--        android:name="com.dr.dairyaccounting.add_data.AddPayment"-->
+<!--        android:label="fragment_add_payment"-->
+<!--        tools:layout="@layout/fragment_add_payment" />-->
+    <fragment
+        android:id="@+id/summaryByPerson"
+        android:name="com.dr.dairyaccounting.records.summary.SummaryByPerson"
+        android:label="fragment_summary_by_person"
+        tools:layout="@layout/fragment_summary_by_person" />
+    <fragment
+        android:id="@+id/summaryByMonth"
+        android:name="com.dr.dairyaccounting.records.summary.SummaryByMonth"
+        android:label="fragment_summary_monthly"
+        tools:layout="@layout/fragment_summary_monthly" />
+
+</navigation>
